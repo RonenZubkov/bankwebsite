@@ -1,6 +1,0 @@
-<application>
-  <component name="BuiltInServerOptions" allowUnsignedRequests="true" />
-  <component name="NodeJsLocalInterpreters">
-    <local-interpreter path="C:/Program Files/nodejs/node.exe" />
-  </component>
-</application>
