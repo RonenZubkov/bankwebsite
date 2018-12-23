@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login / Register</title>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="css/registerLoginPage.css">
+
+    <script src="./js/login.js"></script>
+    <script src="./js/register.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-flex justify-content" id="navbarNav">
+            <ul class="navbar-nav d-flex">
+                <li class="nav-item active p-2 justify-content-start">
+                    <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item p-2 justify-content-start">
+                    <a class="nav-link" href="../profilePage/profilePage.html">Profile Page</a></li>
+                <li class="nav-item p-2 justify-content-start">
+                    <a class="nav-link" href="../moneyTransfer/moneyTransfer.html">Money Transfer Page</a>
+                </li>
+                <li class="ml-auto p-2 justify-content-end">
+                    <a class="nav-link" href="../login/registerLoginPage.html">Login / Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-10 col-xl-9 mx-auto">
+                <div class="card card-signin flex-row">
+                    <div class="card-body card-img-left d-none d-md-flex">
+                        <!--Login Form-->
+                        <form class="form-login" method="post">
+                            <h5 class="card-title text-center">Login</h5>
+
+                            <div class="form-label-group">
+                                <input type="email" id="inputLoginEmail" class="form-control" placeholder="Email address" required>
+                                <label for="inputLoginEmail">Email address</label>
+                            </div>
+
+                            <div class="form-label-group">
+                                <input type="password" id="inputLoginPassword" class="form-control" placeholder="Password" required>
+                                <label for="inputLoginPassword">Password</label>
+                            </div>
+
+                            <button class="btn btn-lg btn-primary btn-block text-uppercase" data-loading-text="<i class='fa fa-spinner fa-spin '></i> Processing Order" type="submit">Login</button>
+                        </form>
+
+                    </div>
+
+                    <!--Seperator in middle-->
+                    <div class="col-md-2">
+                        <div class="sep">
+                            <div class="sepText">
+                                OR
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Register Right side panel-->
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Register</h5>
+                        <form class="form-signin" method="post">
+                            <div class="form-label-group">
+                                <input type="text" id="inputUserame" class="form-control" placeholder="Username" required autofocus>
+                                <label for="inputUserame">Username</label>
+                            </div>
+
+                            <div class="form-label-group">
+                                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+                                <label for="inputEmail">Email address</label>
+                            </div>
+
+                            <hr>
+
+                            <div class="form-label-group">
+                                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                                <label for="inputPassword">Password</label>
+                            </div>
+
+                            <div class="form-label-group">
+                                <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Password" required>
+                                <label for="inputConfirmPassword">Confirm password</label>
+                            </div>
+
+                            <button class="btn btn-lg btn-primary btn-block text-uppercase" data-loading-text="<i class='fa fa-spinner fa-spin '></i> Processing Order" type="submit">Register</button>
+                            <hr class="my-4">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
